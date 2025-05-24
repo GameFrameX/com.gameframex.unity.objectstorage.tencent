@@ -1,0 +1,19 @@
+{
+  "name": "GameFrameX.ObjectStorage.Tencent.Tests",
+  "references": [
+    "GameFrameX.ObjectStorage.Editor",
+    "GameFrameX.ObjectStorage.Tencent.Editor"
+  ],
+  "rootNamespace": "GameFrameX.ObjectStorage.Tencent.Tests",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
