@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.0.2...1.1.0) (2025-12-23)
+
+
+### Features
+
+* **ci:** change ci ([ab50142](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/commit/ab5014283b14f7f49e28922728dc83777fd0c68c))
+
 # Changelog
 
 ## [1.0.2](https://github.com/GameFrameX/com.gameframex.unity.objectstorage.tencent/tree/1.0.2) (2025-05-31)
