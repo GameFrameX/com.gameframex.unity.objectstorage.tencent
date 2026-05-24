@@ -1,39 +1,81 @@
-﻿# HOMEPAGE
+<p align="center">
+  <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="GameFrameX Logo" width="160" />
+</p>
 
-GameFrameX 的 Object Storage 腾讯云COS 组件
+<h1 align="center">Game Frame X Object Storage Tencent COS</h1>
 
-**Object Storage 腾讯云COS 组件 (Object Storage Component)** - 提供Object Storage 腾讯云COS组件相关的接口。
+<p align="center">
+  <a href="https://github.com/GameFrameX/com.gameframex.unity.objectstorage.tencent/releases">
+    <img src="https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.objectstorage.tencent" alt="Version" />
+  </a>
+  <a href="https://github.com/GameFrameX/com.gameframex.unity.objectstorage.tencent/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/GameFrameX/com.gameframex.unity.objectstorage.tencent" alt="License" />
+  </a>
+  <a href="https://gameframex.doc.alianblank.com">
+    <img src="https://img.shields.io/badge/Documentation-online-blue" alt="Documentation" />
+  </a>
+</p>
 
-## 官方文档
+<p align="center">
+  All-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams
+</p>
 
-https://cloud.tencent.com/document/product/436/32819#.E4.B8.8A.E4.BC.A0.E5.AF.B9.E8.B1.A1
+<p align="center">
+  <a href="https://gameframex.doc.alianblank.com">Documentation</a> ·
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="https://qm.qq.com/cgi-bin/qm/qr?k=ikT9gA5m2sKwOyNOfYmQvSAPK_c3GmD6">QQ Group</a> ·
+  Language: <strong>English</strong> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.ja.md">日本語</a> | <a href="README.ko.md">한국어</a>
+</p>
 
-## SDK文档
+---
 
-https://github.com/tencentyun/qcloud-sdk-dotnet/releases
+## Project Overview
 
-## 地域参数获取
+**Object Storage Tencent COS Component** - Provides the Tencent Cloud Object Storage (COS) implementation for the Object Storage component. This package implements the upload manager for Tencent Cloud COS, allowing you to upload files and directories to Tencent Cloud COS buckets.
 
-https://cloud.tencent.com/document/product/436/6224
+### Official Resources
 
-## api Key 获取
+- [Tencent COS Documentation](https://cloud.tencent.com/document/product/436/32819)
+- [SDK Releases](https://github.com/tencentyun/qcloud-sdk-dotnet/releases)
+- [Region Parameters](https://cloud.tencent.com/document/product/436/6224)
+- [API Key Console](https://console.cloud.tencent.com/cam/capi)
 
-https://console.cloud.tencent.com/cam/capi
+## Quick Start
 
-## 参数传递。请看单元测试代码
+### Installation
 
-# 使用文档(文档编写于GPT4)
+Choose one of the following methods:
 
-参照父组件文档使用
-
-## 注意事项
-
-# 使用方式(任选其一)
-
-1. 直接在 `manifest.json` 的文件中的 `dependencies` 节点下添加以下内容
+1. Add the following to the `dependencies` section of your project's `manifest.json`:
    ```json
-      {"com.gameframex.unity.objectstorage.tencent": "https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent.git"}
-    ```
-2. 在Unity 的`Packages Manager` 中使用`Git URL` 的方式添加库,地址为：https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent.git
+   {"com.gameframex.unity.objectstorage.tencent": "https://github.com/AlianBlank/com.gameframex.unity.objectstorage.tencent.git"}
+   ```
+2. Use `Git URL` in Unity's Package Manager: https://github.com/AlianBlank/com.gameframex.unity.objectstorage.tencent.git
+3. Download the repository and place it in your Unity project's `Packages` directory.
 
-3. 直接下载仓库放置到Unity 项目的`Packages` 目录下。会自动加载识别
+### Usage Examples
+
+Refer to the parent component [Object Storage](https://github.com/GameFrameX/com.gameframex.unity.objectstorage) for usage instructions.
+
+## Platform Support
+
+| Platform | Supported |
+|----------|-----------|
+| Windows | Yes |
+| macOS | Yes |
+| Linux | Yes |
+| Android | Yes |
+| iOS | Yes |
+
+## Documentation & Resources
+
+- [Documentation](https://gameframex.doc.alianblank.com)
+- [GitHub Repository](https://github.com/GameFrameX/com.gameframex.unity.objectstorage.tencent)
+
+## Community & Support
+
+- QQ Group: Join via [QR Code](https://qm.qq.com/cgi-bin/qm/qr?k=ikT9gA5m2sKwOyNOfYmQvSAPK_c3GmD6)
+
+## License
+
+This project is licensed under the terms of the [LICENSE](LICENSE) file.
