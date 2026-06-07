@@ -83,6 +83,16 @@ Then add the package to `dependencies`:
 
 - QQ Group: Join via [QR Code](https://qm.qq.com/cgi-bin/qm/qr?k=ikT9gA5m2sKwOyNOfYmQvSAPK_c3GmD6)
 
+
+## Dependencies
+
+| Package | Description |
+|---------|-------------|
+| `com.gameframex.unity.objectstorage` | 1.0.0 |
+
+## Changelog
+
+See [Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.objectstorage.tencent/releases) for changelog.
 ## License
 
 See [LICENSE.md](LICENSE.md) for license information.

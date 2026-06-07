@@ -84,6 +84,16 @@ Then add the package to `dependencies`:
 
 - QQグループ：[QRコード](https://qm.qq.com/cgi-bin/qm/qr?k=ikT9gA5m2sKwOyNOfYmQvSAPK_c3GmD6)から参加
 
+
+## 依存関係
+
+| パッケージ | 説明 |
+|----------|------|
+| `com.gameframex.unity.objectstorage` | 1.0.0 |
+
+## 変更履歴
+
+[Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.objectstorage.tencent/releases) で変更履歴を確認してください。
 ## ライセンス
 
 このプロジェクトは [LICENSE](LICENSE) ファイルに定義された条件に基づいてライセンスされています。
