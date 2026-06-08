@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.1.0...1.1.1) (2026-06-08)
+
+
+### Bug Fixes
+
+* 补全包规范文件（LICENSE/CHANGELOG/URL 字段/unity 字段） ([cd33dd5](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/commit/cd33dd5bbb24414ba92e1505f8ef92989e9e91d8))
+
 # [1.1.0](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.0.2...1.1.0) (2025-12-23)
 
 
