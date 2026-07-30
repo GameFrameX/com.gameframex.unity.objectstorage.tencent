@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.1.1...1.1.2) (2026-07-30)
+
+
+### Bug Fixes
+
+* 更新依赖项版本为 1.1.1 ([adebd39](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/commit/adebd399d694a8a327b376435c0489d9ed3a371e))
+
 ## [1.1.1](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.1.0...1.1.1) (2026-06-08)
 
 
