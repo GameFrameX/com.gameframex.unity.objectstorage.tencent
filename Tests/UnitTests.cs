@@ -16,9 +16,11 @@ namespace GameFrameX.ObjectStorage.Tencent.Tests
         }
 
         [Test]
-        public void TestUpload()
+        public void Create_ReturnsTencentUploadManager()
         {
-            _manager.UploadDirectory("./");
+            // 工厂按类型参数创建腾讯云上传管理器：本地凭证构造，无网络 I/O。
+            Assert.IsNotNull(_manager);
+            Assert.IsInstanceOf<TencentCloudObjectStorageUploadManager>(_manager);
         }
     }
 }
