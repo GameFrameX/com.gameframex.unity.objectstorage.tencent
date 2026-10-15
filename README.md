@@ -23,7 +23,7 @@ All-in-One Solution for Indie Game Development · Empowering Indie Developers' D
 
 ## Project Overview
 
-**Object Storage Tencent COS Component** - Provides the Tencent Cloud Object Storage (COS) implementation for the Object Storage component. This package implements the upload manager for Tencent Cloud COS, allowing you to upload files and directories to Tencent Cloud COS buckets.
+**Object Storage Tencent COS Component** - Provides the Tencent Cloud Object Storage (COS) implementation for the Object Storage component. This package implements `TencentCloudObjectStorageManager`, allowing you to upload and download files and directories to and from Tencent Cloud COS buckets in both runtime and editor builds. The Tencent COS SDK is shipped under Plugins.
 
 ### Official Resources
 
@@ -31,6 +31,33 @@ All-in-One Solution for Indie Game Development · Empowering Indie Developers' D
 - [SDK Releases](https://github.com/tencentyun/qcloud-sdk-dotnet/releases)
 - [Region Parameters](https://cloud.tencent.com/document/product/436/6224)
 - [API Key Console](https://console.cloud.tencent.com/cam/capi)
+
+## Usage
+
+```csharp
+using GameFrameX.ObjectStorage.Runtime;
+using GameFrameX.ObjectStorage.Tencent.Runtime;
+
+// Create and initialize the manager through the factory
+IObjectStorageManager manager = ObjectStorageManagerFactory.Create<TencentCloudObjectStorageManager>(new ObjectStorageOptions
+{
+    AccessKey = "your-access-key",
+    SecretKey = "your-secret-key",
+    BucketName = "your-bucket",
+    Endpoint = "ap-guangzhou",  // bucket region, required for Tencent
+    SavePath = "bundles/android",
+});
+
+// Upload a single file (object key = SavePath + file name)
+manager.UploadFile(new ObjectStorageUploadOptions { LocalPath = "local/file.bundle" });
+
+// Download a single object (local directories are created automatically)
+manager.DownloadFile(new ObjectStorageDownloadOptions
+{
+    ObjectKey = "bundles/android/file.bundle",
+    LocalPath = "downloads/file.bundle",
+});
+```
 
 ## Quick Start
 

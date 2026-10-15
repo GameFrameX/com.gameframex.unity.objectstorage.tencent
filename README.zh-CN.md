@@ -23,7 +23,7 @@
 
 ## 项目简介
 
-**Object Storage 腾讯云 COS 组件** - 提供 Object Storage 组件的腾讯云对象存储（COS）实现。本包实现了腾讯云 COS 的上传管理器，允许你上传文件和目录到腾讯云 COS 存储桶。
+**Object Storage 腾讯云 COS 组件** - 提供 Object Storage 组件的腾讯云对象存储（COS）实现。本包实现了 `TencentCloudObjectStorageManager`，运行时与编辑器均支持上传、下载文件和目录到/从腾讯云 COS 存储桶，腾讯云 COS SDK 位于 Plugins 目录。
 
 ### 官方资源
 
@@ -31,6 +31,33 @@
 - [SDK 发布](https://github.com/tencentyun/qcloud-sdk-dotnet/releases)
 - [地域参数](https://cloud.tencent.com/document/product/436/6224)
 - [API Key 控制台](https://console.cloud.tencent.com/cam/capi)
+
+## 使用示例
+
+```csharp
+using GameFrameX.ObjectStorage.Runtime;
+using GameFrameX.ObjectStorage.Tencent.Runtime;
+
+// 通过工厂创建并初始化管理器
+IObjectStorageManager manager = ObjectStorageManagerFactory.Create<TencentCloudObjectStorageManager>(new ObjectStorageOptions
+{
+    AccessKey = "your-access-key",
+    SecretKey = "your-secret-key",
+    BucketName = "your-bucket",
+    Endpoint = "ap-guangzhou",  // 存储桶地域，腾讯云必填
+    SavePath = "bundles/android",
+});
+
+// 上传单个文件（对象键 = SavePath + 文件名）
+manager.UploadFile(new ObjectStorageUploadOptions { LocalPath = "local/file.bundle" });
+
+// 下载单个对象（自动创建本地目录）
+manager.DownloadFile(new ObjectStorageDownloadOptions
+{
+    ObjectKey = "bundles/android/file.bundle",
+    LocalPath = "downloads/file.bundle",
+});
+```
 
 ## 快速开始
 

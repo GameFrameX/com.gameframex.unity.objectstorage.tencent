@@ -23,7 +23,7 @@
 
 ## 프로젝트 개요
 
-**Object Storage Tencent COS 컴포넌트** - Object Storage 컴포넌트의 Tencent Cloud Object Storage(COS) 구현을 제공합니다. 이 패키지는 Tencent Cloud COS 업로드 매니저를 구현하여 파일 및 디렉토리를 Tencent Cloud COS 버킷에 업로드할 수 있게 합니다.
+**Object Storage Tencent COS 컴포넌트** - Object Storage 컴포넌트의 Tencent Cloud Object Storage(COS) 구현을 제공합니다. 이 패키지는 `TencentCloudObjectStorageManager`를 구현하여 런타임과 에디터 모두에서 파일 및 디렉토리를 Tencent Cloud COS 버킷으로 업로드/다운로드할 수 있게 합니다. Tencent COS SDK는 Plugins에 포함되어 있습니다.
 
 ### 공식 리소스
 
@@ -31,6 +31,33 @@
 - [SDK 릴리스](https://github.com/tencentyun/qcloud-sdk-dotnet/releases)
 - [리전 매개변수](https://cloud.tencent.com/document/product/436/6224)
 - [API Key 콘솔](https://console.cloud.tencent.com/cam/capi)
+
+## 사용 예시
+
+```csharp
+using GameFrameX.ObjectStorage.Runtime;
+using GameFrameX.ObjectStorage.Tencent.Runtime;
+
+// 팩토리로 매니저 생성 및 초기화
+IObjectStorageManager manager = ObjectStorageManagerFactory.Create<TencentCloudObjectStorageManager>(new ObjectStorageOptions
+{
+    AccessKey = "your-access-key",
+    SecretKey = "your-secret-key",
+    BucketName = "your-bucket",
+    Endpoint = "ap-guangzhou",  // 버킷 리전, Tencent 필수
+    SavePath = "bundles/android",
+});
+
+// 단일 파일 업로드 (객체 키 = SavePath + 파일명)
+manager.UploadFile(new ObjectStorageUploadOptions { LocalPath = "local/file.bundle" });
+
+// 단일 객체 다운로드 (로컬 디렉토리 자동 생성)
+manager.DownloadFile(new ObjectStorageDownloadOptions
+{
+    ObjectKey = "bundles/android/file.bundle",
+    LocalPath = "downloads/file.bundle",
+});
+```
 
 ## 빠른 시작
 
