@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.1.2...1.2.0) (2026-10-15)
+
+
+### Bug Fixes
+
+* **tests:** 修正腾讯云上传单元测试用例命名 ([056afe4](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/commit/056afe4e89eb232f3b17688bba9aa1e9eb429ffe))
+
+
+### Features
+
+* **runtime:** 渠道实现迁移对齐核心包 Runtime 抽象 ([84fef7a](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/commit/84fef7a65132aeb2836a5bf340f4409727b97f9c))
+
 ## [1.1.2](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.1.1...1.1.2) (2026-07-30)
 
 

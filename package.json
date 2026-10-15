@@ -3,7 +3,7 @@
   "displayName": "Game Frame X Object Storage Tencent",
   "category": "Game Frame X",
   "description": "Tencent Cloud COS provider for GameFrameX ObjectStorage. Implements TencentCloudObjectStorageManager for Tencent Cloud Object Storage, allowing you to upload and download files and directories to and from Tencent COS buckets in both runtime and editor through the ObjectStorage contracts, with the Tencent COS SDK shipped under Plugins; region parameters and API keys are configured via the Tencent Cloud console. Docs: https://gameframex.doc.alianblank.com\n\nGameFrameX ObjectStorage 的腾讯云 COS 实现功能包。基于 ObjectStorage 契约实现腾讯云对象存储（COS）的 TencentCloudObjectStorageManager，运行时与编辑器均支持上传、下载文件和目录到/从腾讯云 COS 存储桶，腾讯云 COS SDK 位于 Plugins 目录；地域参数与 API 密钥经腾讯云控制台配置。文档：https://gameframex.doc.alianblank.com",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "unity": "2019.4",
   "keywords": [
     "Game Frame X"
