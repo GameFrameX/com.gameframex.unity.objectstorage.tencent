@@ -1,8 +1,8 @@
 {
   "name": "GameFrameX.ObjectStorage.Tencent.Tests",
   "references": [
-    "GameFrameX.ObjectStorage.Editor",
-    "GameFrameX.ObjectStorage.Tencent.Editor"
+    "GameFrameX.ObjectStorage.Runtime",
+    "GameFrameX.ObjectStorage.Tencent.Runtime"
   ],
   "rootNamespace": "GameFrameX.ObjectStorage.Tencent.Tests",
   "includePlatforms": [
@@ -15,5 +15,6 @@
   "autoReferenced": true,
   "defineConstraints": [],
   "versionDefines": [],
-  "noEngineReferences": false
+  "noEngineReferences": false,
+  "testAssemblies": true
 }
