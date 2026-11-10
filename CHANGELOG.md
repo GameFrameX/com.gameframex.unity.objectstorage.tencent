@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.2.0...1.2.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* **objectstorage.tencent:** 添加完整 link.xml 防代码裁剪保护 ([7a31106](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/commit/7a311069bc7cfef1b2725d54e44b74a2b63f4b67))
+
 # [1.2.0](https://github.com/gameframex/com.gameframex.unity.objectstorage.tencent/compare/1.1.2...1.2.0) (2026-10-15)
 
 
